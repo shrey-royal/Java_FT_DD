@@ -1,0 +1,25 @@
+Encapsulation
+
+-> it is a process of wrapping or binding the data together, so that when needed we can get them all at one place.
+
+-> Package
+-> Access Modifiers
+-> getter/setter methods
+
+advantages of packages:
+
+1. easily maintainable
+2. access protection
+3. removes naming collision
+
+
+-> how to compile a packaged class
+
+javac -d directory javafilename
+
+-> how to run a packaged class
+
+java packagename.classname
+
+ToCompile: javac -d . simple.java
+ToRun: java myPackage.Simple
