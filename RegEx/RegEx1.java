@@ -43,15 +43,26 @@ public class RegEx1 {
         // System.out.println(Pattern.matches("[a-zA-Z0-9]{6,}", "arun32qwertyuo34567890xcvb"));//true
         // System.out.println(Pattern.matches("[[a-z]*A-Z0-9]{6,10}", "aarund2348"));//true
 
-        System.out.println(Pattern.matches("\\d", "1"));    //true
-        System.out.println(Pattern.matches("\\d", "123"));  //false
-        System.out.println(Pattern.matches("[\\d[a-z]]*", "123abc"));  //false
-        System.out.println(Pattern.matches("[\\d[a-z]\\s]*", " 1 2 3 "));  //true
-        
-        
-        
+        // System.out.println(Pattern.matches("\\d", "1"));    //true
+        // System.out.println(Pattern.matches("\\d", "123"));  //false
+        // System.out.println(Pattern.matches("[\\d[a-z]]*", "123abc"));  //false
+        // System.out.println(Pattern.matches("[\\d[a-z]\\s]*", " 1 2 3 "));  //true
 
-        
+        //start method - returns first matched character index
+        Pattern p = Pattern.compile("a");
+        Matcher m = p.matcher("abaabaaab");
+
+        while(m.find()) {
+            System.out.println(m.start() + " " + m.group());
+        }
+
+        //end method - returns last matched character index + 1
+        Pattern p1 = Pattern.compile("a");
+        Matcher m1 = p1.matcher("abaabaaab");
+
+        while(m1.find()) {
+            System.out.println(m1.end() + " " + m1.group());
+        }
     }
 }
 
