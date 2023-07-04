@@ -1,0 +1,143 @@
+1. Write a Java program to validate if a given string matches a specific regular expression pattern.
+2. Implement a Java method that counts the number of occurrences of a certain pattern in a given input string using regular expressions.
+3. Develop a Java program to extract all email addresses from a given text using regular expressions.
+4. Create a Java function that checks if a given string is a valid URL based on a regular expression pattern.
+5. Write a Java method to remove all HTML tags from a given string using regular expressions.
+6. Implement a Java program that finds and replaces all occurrences of a specific word in a given text using regular expressions.
+7. Develop a Java function that validates if a given string is a valid password based on certain criteria defined by a regular expression pattern.
+8. Create a Java program that extracts all phone numbers from a given text using regular expressions.
+9. Write a Java method that checks if a given string is a valid date format according to a specific regular expression pattern.
+10. Implement a Java program that splits a given sentence into words using regular expressions.
+11. Develop a Java function that validates if a given string is a valid IP address based on a regular expression pattern.
+12. Create a Java program that removes all duplicate words from a given text using regular expressions.
+13. Write a Java method that extracts all URLs from a given HTML document using regular expressions.
+14. Implement a Java program to validate if a given string is a valid credit card number based on a regular expression pattern.
+15. Develop a Java function that checks if a given string is a valid email address according to a regular expression pattern.
+16. Create a Java program that extracts all hashtags from a given text using regular expressions.
+17. Write a Java method that checks if a given string is a valid time format based on a regular expression pattern.
+18. Implement a Java program that extracts all mentions (usernames) from a given text using regular expressions.
+19. Develop a Java function that validates if a given string is a valid ISBN (International Standard Book Number) based on a regular expression pattern.
+20. Create a Java program that removes all special characters from a given string using regular expressions.
+
+Sample Input and Output Data:
+
+Sure! Here are the sample inputs and outputs for the problem statements:
+
+1. Validate String with Regular Expression Pattern:
+   Input: 
+   - Pattern: "[A-Za-z]+"
+   - String: "Hello"
+   Output: true
+
+2. Count Occurrences of a Pattern:
+   Input:
+   - Pattern: "\\d+"
+   - String: "The price is $20.99, but it's on sale for $15.99!"
+   Output: 2
+
+3. Extract Email Addresses:
+   Input:
+   - String: "Contact us at info@example.com or support@example.com"
+   Output: 
+   - Email Addresses: ["info@example.com", "support@example.com"]
+
+4. Validate URL:
+   Input:
+   - Pattern: "^(http|https)://[\\w.-]+\\.[a-zA-Z]{2,6}(/[\\w.-]*)*/?$"
+   - String: "https://www.example.com"
+   Output: true
+
+5. Remove HTML Tags:
+   Input:
+   - String: "<p>This is a <b>bold</b> statement.</p>"
+   Output: "This is a bold statement."
+
+6. Find and Replace Word:
+   Input:
+   - Pattern: "\\bapple\\b"
+   - String: "I have an apple, but I want an orange."
+   Output: "I have an orange, but I want an orange."
+
+7. Validate Password:
+   Input:
+   - Pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+   - String: "Password123"
+   Output: true
+
+8. Extract Phone Numbers:
+   Input:
+   - String: "Contact us at (123) 456-7890 or (987) 654-3210"
+   Output:
+   - Phone Numbers: ["(123) 456-7890", "(987) 654-3210"]
+
+9. Validate Date Format:
+   Input:
+   - Pattern: "\\d{2}/\\d{2}/\\d{4}"
+   - String: "12/31/2022"
+   Output: true
+
+10. Split Sentence into Words:
+    Input:
+    - String: "This is a sample sentence."
+    Output:
+    - Words: ["This", "is", "a", "sample", "sentence."]
+
+Certainly! Here are the remaining sample inputs and outputs:
+
+11. Validate IP Address:
+    Input:
+    - Pattern: "^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$"
+    - String: "192.168.0.1"
+    Output: true
+
+12. Remove Duplicate Words:
+    Input:
+    - String: "This is a sample sample sentence."
+    Output: "This is a sample sentence."
+
+13. Extract URLs from HTML:
+    Input:
+    - String: "<a href='https://www.example1.com'>Link 1</a> <a href='https://www.example2.com'>Link 2</a>"
+    Output:
+    - URLs: ["https://www.example1.com", "https://www.example2.com"]
+
+14. Validate Credit Card Number:
+    Input:
+    - Pattern: "^\\d{4}-\\d{4}-\\d{4}-\\d{4}$"
+    - String: "1234-5678-9012-3456"
+    Output: true
+
+15. Validate Email Address:
+    Input:
+    - Pattern: "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$"
+    - String: "info@example.com"
+    Output: true
+
+16. Extract Hashtags:
+    Input:
+    - String: "This is a #sample #text with #hashtags."
+    Output:
+    - Hashtags: ["#sample", "#text", "#hashtags"]
+
+17. Validate Time Format:
+    Input:
+    - Pattern: "^\\d{2}:\\d{2}$"
+    - String: "09:30"
+    Output: true
+
+18. Extract Mentions (Usernames):
+    Input:
+    - String: "Contact @JohnDoe or @JaneSmith for assistance."
+    Output:
+    - Mentions: ["@JohnDoe", "@JaneSmith"]
+
+19. Validate ISBN (International Standard Book Number):
+    Input:
+    - Pattern: "^\\d{9}[\\d|X]$"
+    - String: "9783161484100"
+    Output: true
+
+20. Remove Special Characters:
+    Input:
+    - String: "Hello! How are you?"
+    Output: "Hello How are you"
