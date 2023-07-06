@@ -1,0 +1,29 @@
+Multithreading in java is a concept of executing multiple threads simultaneously. Thread is basically a lightweight sub-process, a smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+
+It is mostly used in games, animation etc.
+
+Advantage of Java Multithreading:
+
+1. It doesn't block the user because threads are independent and you can perform multiple operations at same time.
+
+2. You can perform many operations together, so it saves time.
+
+3. Threads are independent, so it doesn't affect other threads if exception occur in a single thread.
+
+Multitasking:
+
+Multitasking is a process of executing multiple tasks simultaneously. We use multitasking to utilize the CPU. Multitasking can be achieved in two ways:
+
+1. Process-based Multitasking(Multiprocessing):
+> Each process has its own address in memory i.e. each process allocates separate memory area.
+> Process is heavyweight.
+> Cost of communication between the process is high.
+> Switching from one process to another require some time for saving and loading registers, memory maps, updating lists etc.
+
+
+2. Thread-based Multitasking(Multithreading):
+> Threads share the same address space.
+> Thread is lightweight.
+> Cost of communication between the thread is low.
+
+note: At a time one thread is executed only.
