@@ -1,0 +1,51 @@
+Java I/O: 
+
+- Java I/O Introduction
+- Java FileInputStream
+- Java FileOutputStream
+- Java BufferedInputStream
+- Java BufferedOutputStream
+- Java SequenceInputStream
+- Java ByteArrayInputStream
+- Java ByteArrayOutputStream
+- Java DataInputStream
+- Java DataOutputStream
+- Java ObjectOutputStream
+- Java ObjectInputStream
+- Java RandomAccessFile
+- Java FileReader
+- Java FileWriter
+- Java BufferedReader
+- Java BufferedWriter
+- Java PrintWriter
+
+
+in Java, 3 streams are created for us automatically. All these streams are attached with the console.
+
+1. System.in - Standard Input Stream
+2. System.out - Standard Output Stream
+3. System.err - Standard Error Stream
+
+
+> Output Stream: Java Application uses an output stream to write data to a destination, it may be a file,an array,peripheral device or socket.
+
+> Input Stream: Java Application uses an input stream to read data from a source, it may be a file,an array,peripheral device or socket.
+
+These OutputStream and InputStream are abstract classes. These classes are used to read and write data in bytes.
+
+outputstream methods: 
+
+1. public void write(int b) throws IOException
+2. public void write(byte[] b) throws IOException
+3. public void write(byte[] b, int off, int len) throws IOException
+4. public void flush() throws IOException
+5. public void close() throws IOException
+
+
+inputstream methods:
+
+1. public int read() throws IOException
+2. public int read(byte[] b) throws IOException
+3. public int read(byte[] b, int off, int len) throws IOException
+4. public int available() throws IOException
+5. public void close() throws IOException
