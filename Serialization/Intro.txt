@@ -1,0 +1,17 @@
+Serialization is mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object. It is mainly used in Hibernate, RMI, JPA, EJB and JMS technologies.
+
+For example, if we want to send an object over the network we have to convert object to byte stream. To achieve this we have to make the class Serializable. It is marker interface. It just informs the compiler that this class can be serialized.
+
+for Serializing the object, we call the writeObject() method of ObjectOutputStream class and for deserialization we call the readObject() method of ObjectInputStream class.
+
+Advantages of Serialization
+
+it is mainly used to travel object's state on the network (that is known as marshalling).
+
+Object ------> Byte Stream (Serialization)
+Byte Stream ------> Object (Deserialization)
+
+now, it's a marker interface. It is used to mark java classes so that objects of these classes may get certain capability. The Cloneable and Serializable are the best examples of marker interfaces in java.
+
+for example, if we want to save the state of an object to a file, we use serialization. The ObjectOutputStream class is used to serialize an object. And, if we want to read the state of an object from a file, we use deserialization. The ObjectInputStream class is used to deserialize an object.
+
